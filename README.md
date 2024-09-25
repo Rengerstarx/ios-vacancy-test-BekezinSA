@@ -1,6 +1,6 @@
 # GitHub Gists list
 
-Тестовое задание для вакансии [iOS Разработчик](https://hh.ru/vacancy/107717340?hhtmFrom=vacancy_edit) в комнанию **Astrosoft**.
+Тестовое задание для вакансии iOS Разработчик в комнанию **Astrosoft**.
 
 ## Описание ТЗ
 
