@@ -19,9 +19,14 @@
 		DDBD04E12CC8212000C07664 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD04E02CC8212000C07664 /* Colors.swift */; };
 		DDBD04E42CC8219E00C07664 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDBD04E22CC8219E00C07664 /* Localizable.strings */; };
 		DDBD04E82CC8226300C07664 /* GistListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD04E72CC8226300C07664 /* GistListView.swift */; };
-		DDBD04EA2CC8227000C07664 /* GistListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD04E92CC8227000C07664 /* GistListCellView.swift */; };
+		DDBD04EA2CC8227000C07664 /* GistListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD04E92CC8227000C07664 /* GistListTableViewCell.swift */; };
 		DDBD04ED2CC823B000C07664 /* GitHubGistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD04EC2CC823B000C07664 /* GitHubGistModel.swift */; };
 		DDBD04F12CC827FB00C07664 /* GitHubGistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD04F02CC827FB00C07664 /* GitHubGistService.swift */; };
+		DDBD04F32CC837E400C07664 /* ViewsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD04F22CC837E400C07664 /* ViewsFactory.swift */; };
+		DDBD04F52CC839C900C07664 /* GistListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD04F42CC839C900C07664 /* GistListItemModel.swift */; };
+		DDBD04F72CC83EF200C07664 /* GistListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD04F62CC83EF200C07664 /* GistListViewModel.swift */; };
+		DDBD04FD2CC84FC000C07664 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD04FC2CC84FC000C07664 /* UserDefaultsHelper.swift */; };
+		DDBD04FF2CC851D200C07664 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD04FE2CC851D200C07664 /* ImageCacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +46,14 @@
 		DDBD04E02CC8212000C07664 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DDBD04E32CC8219E00C07664 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DDBD04E72CC8226300C07664 /* GistListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListView.swift; sourceTree = "<group>"; };
-		DDBD04E92CC8227000C07664 /* GistListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListCellView.swift; sourceTree = "<group>"; };
+		DDBD04E92CC8227000C07664 /* GistListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListTableViewCell.swift; sourceTree = "<group>"; };
 		DDBD04EC2CC823B000C07664 /* GitHubGistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubGistModel.swift; sourceTree = "<group>"; };
 		DDBD04F02CC827FB00C07664 /* GitHubGistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubGistService.swift; sourceTree = "<group>"; };
+		DDBD04F22CC837E400C07664 /* ViewsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsFactory.swift; sourceTree = "<group>"; };
+		DDBD04F42CC839C900C07664 /* GistListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListItemModel.swift; sourceTree = "<group>"; };
+		DDBD04F62CC83EF200C07664 /* GistListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListViewModel.swift; sourceTree = "<group>"; };
+		DDBD04FC2CC84FC000C07664 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		DDBD04FE2CC851D200C07664 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +106,6 @@
 		DDBD04BE2CC81BBD00C07664 /* IOS-Test-Task */ = {
 			isa = PBXGroup;
 			children = (
-				DDBD04D72CC81E5600C07664 /* AppNavigator.swift */,
 				DDBD04D32CC81BD600C07664 /* Common */,
 				DDBD04D42CC81BE000C07664 /* Modules */,
 				DDBD04D52CC81BE900C07664 /* Resourses */,
@@ -110,6 +119,10 @@
 			children = (
 				DDBD04EB2CC823A800C07664 /* GitHubGist */,
 				DDBD04D62CC81E4A00C07664 /* Extensions */,
+				DDBD04F22CC837E400C07664 /* ViewsFactory.swift */,
+				DDBD04D72CC81E5600C07664 /* AppNavigator.swift */,
+				DDBD04FC2CC84FC000C07664 /* UserDefaultsHelper.swift */,
+				DDBD04FE2CC851D200C07664 /* ImageCacheManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -147,9 +160,10 @@
 		DDBD04DB2CC8200A00C07664 /* GistList */ = {
 			isa = PBXGroup;
 			children = (
+				DDBD04F92CC83F0800C07664 /* ViewControllers */,
+				DDBD04F82CC83EF500C07664 /* ViewModels */,
 				DDBD04E62CC8224400C07664 /* Views */,
 				DDBD04E52CC8223900C07664 /* Models */,
-				DDBD04C32CC81BBD00C07664 /* GistListViewController.swift */,
 			);
 			path = GistList;
 			sourceTree = "<group>";
@@ -157,6 +171,7 @@
 		DDBD04E52CC8223900C07664 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DDBD04F42CC839C900C07664 /* GistListItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,7 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				DDBD04E72CC8226300C07664 /* GistListView.swift */,
-				DDBD04E92CC8227000C07664 /* GistListCellView.swift */,
+				DDBD04E92CC8227000C07664 /* GistListTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +192,22 @@
 				DDBD04F02CC827FB00C07664 /* GitHubGistService.swift */,
 			);
 			path = GitHubGist;
+			sourceTree = "<group>";
+		};
+		DDBD04F82CC83EF500C07664 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD04F62CC83EF200C07664 /* GistListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DDBD04F92CC83F0800C07664 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD04C32CC81BBD00C07664 /* GistListViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,17 +325,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDBD04FD2CC84FC000C07664 /* UserDefaultsHelper.swift in Sources */,
 				DDBD04C42CC81BBD00C07664 /* GistListViewController.swift in Sources */,
 				DDBD04C02CC81BBD00C07664 /* AppDelegate.swift in Sources */,
 				DDBD04DD2CC820FF00C07664 /* Images.swift in Sources */,
+				DDBD04FF2CC851D200C07664 /* ImageCacheManager.swift in Sources */,
+				DDBD04F32CC837E400C07664 /* ViewsFactory.swift in Sources */,
 				DDBD04E82CC8226300C07664 /* GistListView.swift in Sources */,
 				DDBD04E12CC8212000C07664 /* Colors.swift in Sources */,
-				DDBD04EA2CC8227000C07664 /* GistListCellView.swift in Sources */,
+				DDBD04EA2CC8227000C07664 /* GistListTableViewCell.swift in Sources */,
 				DDBD04DA2CC81F1F00C07664 /* UIViewController+Convenience.swift in Sources */,
 				DDBD04DF2CC8211300C07664 /* LocalizedStrings.swift in Sources */,
+				DDBD04F52CC839C900C07664 /* GistListItemModel.swift in Sources */,
 				DDBD04F12CC827FB00C07664 /* GitHubGistService.swift in Sources */,
 				DDBD04D82CC81E5600C07664 /* AppNavigator.swift in Sources */,
 				DDBD04ED2CC823B000C07664 /* GitHubGistModel.swift in Sources */,
+				DDBD04F72CC83EF200C07664 /* GistListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

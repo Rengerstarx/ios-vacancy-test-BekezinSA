@@ -24,5 +24,9 @@ extension UIColor {
     static let appSystemGreen = UIColor.systemGreen
     static let appSystemYellow = UIColor.systemYellow
     static let appSystemOrange = UIColor.systemOrange
+    
+    static let appMainBackground = UIColor(named: "appBackground")!
+    static let appMainTableCell = UIColor(named: "appTableCell")!
+    static let appMainTextColor = UIColor(named: "appTextColor")!
 
 }

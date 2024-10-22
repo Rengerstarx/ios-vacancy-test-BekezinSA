@@ -19,3 +19,7 @@
 "GistErrorServerErrorTitle" = "Ошибка сервера. Попробуйте позже";
 "GistErrorDecodingErrorTitle" = "Ошибка декодирования данных";
 "GistErrorUnknownErrorString" = "Неизвестная ошибка. Код состояния: %d";
+
+// Gist List
+"GistListAllGistsTitle" = "All Gists";
+"GistListReloadTitle" = "Reload";

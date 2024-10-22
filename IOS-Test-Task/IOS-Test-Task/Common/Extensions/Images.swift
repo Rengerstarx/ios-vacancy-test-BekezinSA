@@ -11,6 +11,10 @@ enum AppImage: String {
 
     // System
     case sfSquareAndArrowUp = "square.and.arrow.up"
+    case sfChevronRight = "chevron.right"
+    case sfPersonCircle = "person.circle"
+    case sfClearCircle = "clear"
+    case sfLock = "lock"
 
     var uiImage: UIImage? {
         return UIImage(named: rawValue) ?? UIImage(systemName: rawValue)

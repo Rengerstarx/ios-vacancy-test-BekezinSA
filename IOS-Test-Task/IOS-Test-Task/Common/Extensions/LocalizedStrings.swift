@@ -20,6 +20,13 @@ extension String {
         
     }
     
+    enum GistList: String {
+        
+        case gistListAllGistsTitle
+        case gistListReloadTitle
+        
+    }
+    
     enum GistError: String {
         
         case gistErrorInvalidURLTitle

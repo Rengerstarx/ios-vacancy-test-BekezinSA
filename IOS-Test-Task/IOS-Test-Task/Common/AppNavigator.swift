@@ -19,7 +19,8 @@ class AppNavigator {
 
     func setupRootNavigationInWindow(_ window: UIWindow) {
         self.window = window
-        window.rootViewController = GistListViewController(/*showTrialPage: showTrialPage*/)
+        let gistListViewController = GistListViewController()
+        let navigationController = UINavigationController(rootViewController: gistListViewController)
+        window.rootViewController = navigationController
     }
-
 }
