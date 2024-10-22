@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  IOS-Test-Task
+
+  Created by Сергей Бекезин on 22.10.2024.
+  
+*/
+
+// Greeting
+"GreetingMainTitle" = "Hello, Dear User!";
+"GreetingDescriptionTitle" = "This is a gist list app, enjoy using it!";
+
+// Gist Errors
+"GistErrorInvalidURLTitle" = "Неверный URL";
+"GistErrorNoDataTitle" = "Данные не были получены";
+"GistErrorUnauthorizedTitle" = "Ошибка авторизации. Проверьте токен";
+"GistErrorForbiddenTitle" = "Доступ запрещен";
+"GistErrorNotFoundTitle" = "Запрашиваемый ресурс не найден";
+"GistErrorServerErrorTitle" = "Ошибка сервера. Попробуйте позже";
+"GistErrorDecodingErrorTitle" = "Ошибка декодирования данных";
+"GistErrorUnknownErrorString" = "Неизвестная ошибка. Код состояния: %d";
